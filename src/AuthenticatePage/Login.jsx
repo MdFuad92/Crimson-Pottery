@@ -1,12 +1,88 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../AuthProvider/AuthProvider';
+import { FaEye, FaEyeSlash, FaGithub, FaGoogle } from 'react-icons/fa';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Login = () => {
-
+    const {login,google,github} = useContext(AuthContext)
+    const [pass,setPass] = useState(false)
     const handleLogin = (e)=>{
         e.preventDefault()
+   
+        const form = e.target
+        const name = form.name.value
+        const email = form.email.value
+        const password = form.password.value
+        console.log(name,email,password)
+
+        login(email,password)
+        .then((result) =>{
+         console.log(result.user)
+   
+         toast.success('Login successful');
+   
+        })
+        .catch((error)=>{
+          console.error(error)
+          toast.error('Wrong password or email, Please try again!')
+        
+        })
 
     }
+
+    const handleGoogle = ()=>{
+      google()
+      .then((result)=>{
+        console.log(result.user)
+        toast.success('🦄 Successfully Logged in', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          toastId: 'success1',
+         
+          });
+          
+         
+     
+        })
+        .catch((error)=>{
+          console.error(error)
+          
+          
+          
+        })
+      
+    }
+
+    const handleGithub = () =>{
+      github()
+      .then((result)=>{
+       console.log(result)
+       toast.success('🦄 Successfully Logged in', {
+         position: "top-right",
+         autoClose: 5000,
+         hideProgressBar: false,
+         closeOnClick: true,
+         pauseOnHover: true,
+         draggable: true,
+         progress: undefined,
+         theme: "dark",
+         toastId: 1,
+        
+         });
+    
+      })
+      .catch((error)=>{
+        console.error(error)
+   
+      })
+ }
     return (
         <div className="hero min-h-screen  " style={{backgroundImage: 'url(https://i.ibb.co/d2nzKcx/chloe-bolton-R0qth-Xq3jec-unsplash.jpg'}}>
         <div className="hero-content flex-col lg:flex-row-reverse">
@@ -23,22 +99,48 @@ const Login = () => {
                 </label>
                 <input type="email" placeholder="email" name='email' className="input input-bordered" required />
               </div>
-              <div className="form-control">
+              <div className='relative'>
+             <div className="form-control">
                 <label className="label">
                   <span className="label-text">Password</span>
                 </label>
-                <input type="password" placeholder="password" name='password' className="input input-bordered" required />
+             
+                <input type={pass?'text': "password"} placeholder="password" name='password' className="input input-bordered" required />
+                <span className='absolute md:left-72 left-60 top-[53px]' onClick={()=> setPass(!pass) } >{
+                 pass?<FaEye className='text-lg'></FaEye>:<FaEyeSlash className='text-lg' />
+               
+                }  </span>
                 <label className="label">
                   <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                 </label>
               </div>
-              <div className="form-control mt-6">
-                <button className="btn hover:bg-neutral-700 border-neutral-700 bg-neutral-700 text-white">Register</button>
-              </div>
+             </div>
+             
+                <button className="btn hover:bg-neutral-700 border-neutral-700 bg-neutral-700 text-white">Login</button>
+                <button onClick={handleGoogle} className='btn  hover:bg-neutral-700 border-neutral-700 bg-neutral-700 text-white'><FaGoogle />Google</button>
+                <button onClick={handleGithub} className='btn  hover:bg-neutral-700 border-neutral-700 bg-neutral-700 text-white'><FaGithub />Github</button>
+              
               <div>
                 <p className='text-center mt-3 text-sm'>Already have an account <Link to='/register'><span className='text-primary font-bold text-lg '>Register</span></Link> Now</p>
                 </div>
+                <ToastContainer
+position="top-right"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="light"
+
+/>
+
+<ToastContainer />
+               
             </form>
+ 
           </div>
         </div>
       </div>
