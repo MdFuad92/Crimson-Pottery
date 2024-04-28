@@ -94,6 +94,7 @@ const Addcrafts = () => {
                         <option value="Earthenware"><span>Earthenware</span></option>
                         <option value="Majolica"><span>Majolica</span></option>
                         <option value="Raku"><span>Raku</span></option>
+                        <option value="Wood-Fired Ceramics"><span>Wood-Fired Ceramics</span></option>
                    
                         
                     </select>
