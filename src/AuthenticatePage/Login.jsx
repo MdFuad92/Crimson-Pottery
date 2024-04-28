@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../AuthProvider/AuthProvider';
 import { FaEye, FaEyeSlash, FaGithub, FaGoogle } from 'react-icons/fa';
 import { ToastContainer, toast } from 'react-toastify';
+import Swal from 'sweetalert2';
 
 const Login = () => {
     const {login,google,github} = useContext(AuthContext)
@@ -20,12 +21,20 @@ const Login = () => {
         .then((result) =>{
          console.log(result.user)
    
-         toast.success('Login successful');
+         Swal.fire({
+          title: "Congratulations!",
+          text: "Login Successful",
+          icon: "success"
+        });
    
         })
         .catch((error)=>{
           console.error(error)
-          toast.error('Wrong password or email, Please try again!')
+          Swal.fire({
+            title: "Sorry!",
+            text: "Wrong Password or Email!",
+            icon: "error"
+          });
         
         })
 
@@ -35,24 +44,23 @@ const Login = () => {
       google()
       .then((result)=>{
         console.log(result.user)
-        toast.success('🦄 Successfully Logged in', {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "dark",
-          toastId: 'success1',
-         
-          });
+        Swal.fire({
+          title: "Congratulations!",
+          text: "Login Successful",
+          icon: "success"
+        });
           
          
      
         })
         .catch((error)=>{
           console.error(error)
+          Swal.fire({
+            title: "Sorry!",
+            text: "Wrong Password or Email!",
+            icon: "error"
+          });
+        
           
           
           
@@ -64,22 +72,21 @@ const Login = () => {
       github()
       .then((result)=>{
        console.log(result)
-       toast.success('🦄 Successfully Logged in', {
-         position: "top-right",
-         autoClose: 5000,
-         hideProgressBar: false,
-         closeOnClick: true,
-         pauseOnHover: true,
-         draggable: true,
-         progress: undefined,
-         theme: "dark",
-         toastId: 1,
-        
-         });
+       Swal.fire({
+        title: "Congratulations!",
+        text: "Login Successful",
+        icon: "success"
+      });
     
       })
       .catch((error)=>{
         console.error(error)
+        Swal.fire({
+          title: "Sorry!",
+          text: "Wrong Password or Email!",
+          icon: "error"
+        });
+      
    
       })
  }

@@ -14,6 +14,9 @@ import Allcrafteditems from '../components/Allcrafteditems';
 
 import Craftdetails from '../components/Craftdetails';
 import MyCraftedItems from '../components/MyCraftedItems';
+import Update from '../components/Update';
+
+
 
 
 
@@ -55,7 +58,12 @@ const router = createBrowserRouter([
         {
           path:'/mylist',
           element:<MyCraftedItems></MyCraftedItems>
-          
+
+        },
+        {
+          path:'/update/:id',
+          element:<Update></Update>,
+          loader:({params}) => fetch(`http://localhost:5000/crafts/id/${params.id}`)
         }
       
       ]

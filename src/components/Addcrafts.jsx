@@ -42,7 +42,7 @@ const Addcrafts = () => {
               if(data.insertedId){
                 Swal.fire({
                     title: "Congratulations!",
-                    text: "Registration Successful",
+                    text: "Added Successfully",
                     icon: "success"
                   });
               }
@@ -168,13 +168,13 @@ const Addcrafts = () => {
             <label className="label">
             <span className="label-text font-bold">Email</span>
             </label>
-            <input  type="email" name='email' defaultValue={user?.email} placeholder="Email" className="input input-bordered" required />
+            <input  type="email" name='email' defaultValue={user?.email} placeholder="Email" className="input input-bordered" required  readOnly/>
             </div>
             <div className="form-control">
             <label className="label">
             <span className="label-text font-bold">Name</span>
             </label>
-            <input type="name" name='name' defaultValue={user?.displayName} placeholder="Name" className="input input-bordered" required />
+            <input type="name" name='name' defaultValue={user?.displayName} placeholder="Name" className="input input-bordered" required readOnly />
           
           
             </div>
