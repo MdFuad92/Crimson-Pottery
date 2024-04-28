@@ -113,7 +113,7 @@ const Addcrafts = () => {
             <label className="label">
             <span className="label-text">Rating</span>
             </label>
-            <input  type="text" placeholder="Rating" name='rating' className="input input-bordered w-full" required />
+            <input  type="text" placeholder="Rating" name='rating'  className="input input-bordered w-full" required />
             </div>
             <div className="form-control ">
             <h1 className='font-bold'>Customization</h1>
@@ -129,7 +129,7 @@ const Addcrafts = () => {
            <input type="radio" name='customization' value='no' className="checkbox checkbox-error" />
         
          </label>
-         </div>
+         </div>       
            
         </div>
      
@@ -171,7 +171,7 @@ const Addcrafts = () => {
             </div>
             <div className="form-control">
             <label className="label">
-            <span className="label-text">Name</span>
+            <span className="label-text font-bold">Name</span>
             </label>
             <input type="name" name='name' defaultValue={user?.displayName} placeholder="Name" className="input input-bordered" required />
           

@@ -15,11 +15,17 @@ const Craftdetails = () => {
         <section className="dark:bg-gray-100 dark:text-gray-800">
         <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
             <div>
+                
                 <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl dark:text-gray-900">{item_name}</h2>
                 <p className="max-w-3xl mx-auto mt-4 text-xl text-center dark:text-gray-600"></p>
             </div>
             <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center" data-aos="fade-up"data-aos-duration='1000'>
                 <div>
+                <div className='mb-5 space-y-1 box  border border-slate-500  p-2 rounded-xl' >
+                <p className='font-extrabold text-lg'>Added by</p>
+                <p className='font-semibold'><span className='font-bold'>Name</span>: {name}</p>
+                <p className='font-semibold'><span className='font-bold'>Email</span>: {email}</p>
+                </div>
                     <h3 className="text-2xl font-bold tracking-tight sm:text-3xl dark:text-gray-900">{category}</h3>
                     <p className="mt-3 text-lg dark:text-gray-600">{description}</p>
                     <div className="mt-12 space-y-12">
