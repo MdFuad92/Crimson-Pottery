@@ -15,6 +15,8 @@ import Allcrafteditems from '../components/Allcrafteditems';
 import Craftdetails from '../components/Craftdetails';
 import MyCraftedItems from '../components/MyCraftedItems';
 import Update from '../components/Update';
+import Error from '../Error/Error';
+import PrivateRoute from './PrivateRoute';
 
 
 
@@ -24,6 +26,7 @@ const router = createBrowserRouter([
     {
       path: "/",
       element: <Root></Root>,
+      errorElement:<Error></Error>,
       children:[
         {
            path:'/',
@@ -51,7 +54,7 @@ const router = createBrowserRouter([
         },
         {
           path:'/craftDetails/:id',
-          element:<Craftdetails></Craftdetails>,
+          element:<PrivateRoute><Craftdetails></Craftdetails>,</PrivateRoute>,
           loader:({params}) => fetch(`http://localhost:5000/crafts/id/${params.id}`)
 
         },
