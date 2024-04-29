@@ -46,6 +46,7 @@ const Register = () => {
             update(name,photo)
             .then((result)=>{
             console.log(result)
+            window.location.reload()
         
            
              
