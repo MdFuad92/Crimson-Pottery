@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {
     createBrowserRouter,
     
@@ -17,12 +17,16 @@ import MyCraftedItems from '../components/MyCraftedItems';
 import Update from '../components/Update';
 import Error from '../Error/Error';
 import PrivateRoute from './PrivateRoute';
-
+import { AuthContext } from '../AuthProvider/AuthProvider';
+import CategoriesSection from '../components/CategoriesSection';
 
 
 
 
 const router = createBrowserRouter([
+
+
+
     {
       path: "/",
       element: <Root></Root>,
@@ -67,6 +71,12 @@ const router = createBrowserRouter([
           path:'/update/:id',
           element:<PrivateRoute><Update></Update></PrivateRoute>,
           loader:({params}) => fetch(`http://localhost:5000/crafts/id/${params.id}`)
+        },
+        {
+          path:'/categoriesonly',
+          element:<CategoriesSection></CategoriesSection>,
+          loader:()=>fetch('http://localhost:5000/newcrafts')
+
         }
       
       ]

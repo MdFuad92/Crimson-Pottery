@@ -148,14 +148,14 @@ const Addcrafts = () => {
             <label className="cursor-pointer label space-x-3 ">
             <span className="label-text">Available</span>
             
-            <input  type="radio" name='stock' value=' Instock'  defaultChecked className="checkbox checkbox-accent" required  />
+            <input  type="radio" name='stock' value=' Instock'   className="checkbox checkbox-accent" required  />
           
           
             </label>
             <label className="cursor-pointer label space-x-3 ">
             <span className="label-text">Not Available</span>
             
-            <input  type="radio" name='stock' value='Out of Stock'  defaultChecked className="checkbox checkbox-error" required  />
+            <input  type="radio" name='stock' value='Out of Stock'   className="checkbox checkbox-error" required  />
           
           
             </label>
