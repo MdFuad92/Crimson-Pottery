@@ -1,14 +1,21 @@
-import React, { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext, useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { AuthContext } from '../AuthProvider/AuthProvider';
 
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import Swal from 'sweetalert2';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Register = () => {
      const {createEmail,update} = useContext(AuthContext)
+     
+
+     useEffect(() => {
+      AOS.init();
+    }, [])
      const [pass,setPass] = useState(false)
     const handleRegister = (e)=>{
           e.preventDefault()
@@ -77,7 +84,7 @@ const Register = () => {
     }
     return (
         <div className="hero min-h-screen  " style={{backgroundImage: 'url(https://i.ibb.co/d2nzKcx/chloe-bolton-R0qth-Xq3jec-unsplash.jpg'}}>
-        <div className="hero-content flex-col lg:flex-row-reverse">
+        <div className="hero-content flex-col lg:flex-row-reverse" data-aos="fade-up" data-aos-duration='1000'>
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold">Register Now!</h1>
             <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>

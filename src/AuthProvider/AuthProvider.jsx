@@ -15,7 +15,9 @@ const AuthProvider = ({children}) => {
     const [loader,setLoader] = useState(true)
 
     const createEmail = (email,password) =>{
+    setLoader(true)
     return createUserWithEmailAndPassword(auth,email,password)
+    
     }
     
     const login = (email,password) =>{
@@ -63,7 +65,7 @@ const AuthProvider = ({children}) => {
       
      },[])   
 
-    const authInfo = {user,createEmail,login,logOut,update,google,github}
+    const authInfo = {user,createEmail,login,logOut,update,google,github,loader}
     return (
         <AuthContext.Provider value={authInfo} >
             {children}

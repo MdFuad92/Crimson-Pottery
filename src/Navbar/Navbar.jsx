@@ -20,9 +20,9 @@ const Navbar = () => {
  }
     const link = <>
         <li ><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/products'>All art & crafts</NavLink></li>
-        <li><NavLink to='/add'>Add Craft Item</NavLink></li>
-        <li><NavLink to='/mylist'>My art and craft list</NavLink></li>
+        <li><NavLink to='/products'>Products</NavLink></li>
+        <li><NavLink to='/add'>Add Items</NavLink></li>
+        <li><NavLink to='/mylist'>My Cart</NavLink></li>
        
     </>
 

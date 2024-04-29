@@ -17,7 +17,7 @@ const Allcrafteditems = () => {
         <th>
           
         </th>
-        <th>User Name</th>
+       
         <th>Item-Name</th>
         <th>Item-Category</th>
         <th>Price</th>
@@ -35,27 +35,28 @@ const Allcrafteditems = () => {
             </th>
             <td>
               <div className="flex items-center gap-3">
-                
-                <div>
-                  <div className="font-bold">{c.name}</div>
-                  <div className="text-sm opacity-50">{c.email}</div>
-                </div>
+              {c.item_name}
+          
               </div>
             </td>
             <td>
-              {c.item_name}
-              <br/>
+            {c.category}
+            <br/>
               <span className="badge badge-ghost badge-sm">{c.stock}</span>
+          
+             
             </td>
-            <td>{c.category}</td>
+          
             <td>
               <button className="btn btn-ghost btn-xs text-green-500">{c.price} $</button>
+             
 
             </td>
             <td>
               <button className="btn btn-ghost btn-xs text-yellow-400">{c.rating} <FaStar></FaStar></button>
 
             </td>
+           
             <td>
              <Link to={`/craftDetails/${c._id}`}> <button className="btn  btn-xs ">View Details</button></Link>
 

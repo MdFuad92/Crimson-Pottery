@@ -44,7 +44,7 @@ const router = createBrowserRouter([
         },
         {
           path:'/add',
-          element:<Addcrafts></Addcrafts>,
+          element:<PrivateRoute><Addcrafts></Addcrafts></PrivateRoute>,
         },
         {
           path:'/products',
@@ -60,12 +60,12 @@ const router = createBrowserRouter([
         },
         {
           path:'/mylist',
-          element:<MyCraftedItems></MyCraftedItems>
+          element:<PrivateRoute><MyCraftedItems></MyCraftedItems></PrivateRoute>
 
         },
         {
           path:'/update/:id',
-          element:<Update></Update>,
+          element:<PrivateRoute><Update></Update></PrivateRoute>,
           loader:({params}) => fetch(`http://localhost:5000/crafts/id/${params.id}`)
         }
       

@@ -193,7 +193,7 @@ const Addcrafts = () => {
      
       
     
-        <input type="submit" value='Add Your favorite design' className='btn btn-block hover:bg-neutral-700 bg-neutral-700 text-white border-neutral-700' />
+        <input type="submit" value='Add' className='btn btn-block hover:bg-neutral-700 bg-neutral-700 text-white border-neutral-700' />
             </form>
            
             
