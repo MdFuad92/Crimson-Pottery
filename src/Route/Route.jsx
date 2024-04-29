@@ -73,9 +73,9 @@ const router = createBrowserRouter([
           loader:({params}) => fetch(`http://localhost:5000/crafts/id/${params.id}`)
         },
         {
-          path:'/categoriesonly',
+          path:'/categoriesonly/:subcategory_name',
           element:<CategoriesSection></CategoriesSection>,
-          loader:()=>fetch('http://localhost:5000/newcrafts')
+          loader:({params})=>fetch(`http://localhost:5000/newcrafts/${params.subcategory_name}`)
 
         }
       
