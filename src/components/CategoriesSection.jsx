@@ -9,25 +9,25 @@ import LastCategories from './LastCategories';
 const CategoriesSection = () => {
     const newItems  = useLoaderData()
 
-    const loader = useLoaderData()
-    const {_id,email,name,Customize,stock,processing,item_name ,photo, category ,price ,rating,description} = loader
+        
+    const [craft,setCraft] = useState([])
+    useEffect(()=>{
+         fetch('http://localhost:5000/crafts')
+         .then(res=>res.json())
+         .then((data) => {
+          console.log(data)
+          setCraft(data)
+        
+      })
+    },[])
+   
+
  
      useEffect(() => {
         AOS.init();
       }, [])
       
-    
-      const [craft,setCraft] = useState([])
-      useEffect(()=>{
-           fetch('http://localhost:5000/crafts/')
-           .then(res=>res.json())
-           .then((data) => {
-            console.log(data)
-            setCraft(data)
-          
-        })
-      },[])
-     
+
 
     // "image": 
     // "item_name": "
@@ -39,9 +39,17 @@ const CategoriesSection = () => {
    
 
     return (
-     {
-        newItems.map(m => <LastCategories key={m._id} m={m}></LastCategories> )
+   <div>
+    <div>
+    {
+        newItems.map(m => <LastCategories key={m._id} m={m} ></LastCategories> )
+        
      } 
+    </div>
+
+     
+  
+   </div>
     );
 };
 

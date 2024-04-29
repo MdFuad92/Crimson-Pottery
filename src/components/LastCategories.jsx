@@ -3,8 +3,8 @@ import { FaStar } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const LastCategories = ({m}) => {
-    const {_id,image ,item_name,subcategory_name,description,rating,price} = m
-   
+    const {image ,item_name,subcategory_name,description,rating,price} = m
+    
   
   
    
@@ -31,7 +31,7 @@ const LastCategories = ({m}) => {
           <p>{description}</p>
           <div className="card-actions justify-end space-x-2">
             <div>
-                <Link to ={`/craftDetails/${_id}`} ><button className='underline hover:text-amber-200'>View Details</button></Link>
+                <Link  ><button className='underline hover:text-amber-200'>View Details</button></Link>
             </div>
             <div className='flex items-center text-yellow-400'>
                 <FaStar></FaStar>
