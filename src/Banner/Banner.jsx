@@ -22,7 +22,7 @@ const Banner = () => {
   
       
 
-      <div className="hero md:min-h-screen min-h-full  mx-auto  bg-no-repeat opacity-90  md:bg-[length:1600px_900px] bg-[length:600px_600px] " style={{backgroundImage: 'url(https://i.ibb.co/d2nzKcx/chloe-bolton-R0qth-Xq3jec-unsplash.jpg'}}>
+      <div className="hero md:min-h-screen min-h-screen  mx-auto  bg-no-repeat opacity-90  md:bg-[length:1600px_900px]  " style={{backgroundImage: 'url(https://i.ibb.co/d2nzKcx/chloe-bolton-R0qth-Xq3jec-unsplash.jpg'}}>
       <div className="hero-overlay bg-opacity-20"></div>
       <div className="hero-content text-start font-normal " >
         <div className="max-w-2xl mx-auto space-y-5" data-aos="fade-up" data-aos-duration='1000' >
@@ -39,7 +39,7 @@ const Banner = () => {
          </p>
           <div className='mt-5 space-x-3'>
         <button className="btn btn-outline bg-neutral-700 border-neutral-700 text-white">Shop Now</button>
-        <button className="btn btn-outline hover:bg-neutral-700">Add</button>
+        <button className="btn btn-outline hover:bg-neutral-700">All Items</button>
         </div>
         
         </div>

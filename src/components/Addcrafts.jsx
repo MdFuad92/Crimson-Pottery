@@ -62,13 +62,13 @@ const Addcrafts = () => {
         <h1 className='md:text-4xl text-2xl font-extrabold text-center '>Add Your Favorite Item</h1>
            {/* form name and quantity*/} 
         <div className='md:flex items-center gap-8'>
-        <div className="form-control w-1/2  ">
+        <div className="form-control md:w-1/2  ">
             <label className="label">
             <span className="label-text">Item URL</span>
             </label>
             <input  type="text" placeholder="item URL" name='photo' className="input input-bordered w-full" required />
             </div>
-            <div className="form-control md:w-auto w-52">
+            <div className="form-control md:w-auto ">
             <label className="label">
             <span className="label-text">Item Name</span>
             </label>
@@ -79,7 +79,7 @@ const Addcrafts = () => {
         </div>
          {/* form supply and taste*/} 
         <div className='md:flex gap-8 items-center '>
-        <div className="form-control w-1/2 ">
+        <div className="form-control md:w-1/2 ">
             <label className="label">
             <span className="label-text">Category</span>
             </label>
@@ -99,7 +99,7 @@ const Addcrafts = () => {
                         
                     </select>
             </div>
-            <div className="form-control w-52  ">
+            <div className="form-control   ">
             <label className="label">
             <span className="label-text">Price</span>
             </label>
@@ -116,7 +116,7 @@ const Addcrafts = () => {
             </label>
             <input  type="text" placeholder="Rating" name='rating'  className="input input-bordered w-full" required />
             </div>
-            <div className="form-control md:w-auto w-52 ">
+            <div className="form-control md:w-auto  ">
             <h1 className='font-bold'>Customization</h1>
            <label className="cursor-pointer label space-x-3">
         
@@ -143,7 +143,7 @@ const Addcrafts = () => {
         <input  type="text" name='processing' placeholder="Processing Time" className="input input-bordered"  required />
           
             </div>
-            <div className="form-control w-52">
+            <div className="form-control ">
             <h1 className='font-bold'>Stock Status</h1>
             <label className="cursor-pointer label space-x-3 ">
             <span className="label-text">Available</span>
@@ -164,7 +164,7 @@ const Addcrafts = () => {
         </div>
 
         <div className='md:flex items-center gap-8 '>
-        <div className="form-control w-1/2 ">
+        <div className="form-control md:w-1/2 ">
             <label className="label">
             <span className="label-text font-bold">Email</span>
             </label>

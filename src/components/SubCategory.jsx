@@ -7,11 +7,11 @@ const SubCategory = () => {
    
 
     return (
-        <div className="  max-w-screen shadow-xl p-10 rounded-md  dark:bg-gray-50 dark:text-gray-900">
-	<div className='grid grid-cols-3 gap-5  '>
+        <div className="  max-w-screen shadow-xl p-10 rounded-md   dark:bg-gray-50 dark:text-gray-900">
+	<div className='md:grid grid-cols-3 gap-5  '>
     {
         category.map(c=>
-            <div key={c._id}>
+            <div className='mb-10' key={c._id}>
             <img src={c.image} alt="" className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500" />
             <div className="mt-6 mb-2">
                 <span className="block text-xs font-medium tracking-widest uppercase dark:text-violet-600">{c.item_name}</span>
