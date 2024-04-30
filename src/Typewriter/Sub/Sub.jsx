@@ -15,8 +15,8 @@ const Sub = ({i}) => {
       
        
             
-     <Slide direction='up' duration={1000}>
-           <div className=" card w-96 h-[400px] hover:text-white    bg-gradient-to-r from-stone-500 via-stone-400 to-stone-300 border ">
+     
+           <div className=" card md:w-96 w-[300px] h-[400px] hover:text-white    bg-gradient-to-r from-stone-500 via-stone-400 to-stone-300 border " data-aos="fade-up" data-aos-duration='1000'>
        
         
        <div className=" p-5  hover:rounded-xl cursor-pointer ">
@@ -32,7 +32,7 @@ const Sub = ({i}) => {
        
       
       </div>
-     </Slide>
+    
   
      
   

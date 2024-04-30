@@ -25,13 +25,13 @@ const Home = () => {
     const [newlength,setLength] = useState(10)
 
     return (
-        <div className='space-y-36'>
+        <div className='md:space-y-36 space-y-20'>
           <Banner></Banner>
           <Highlight></Highlight>
           <div >
           <h1 className='text-5xl text-center'>Our Products</h1>
           </div>
-          <div className='grid grid-cols-4 gap-6 ml-6 mt-7 mb-7  '>
+          <div className='grid   md:grid-cols-4 mx-10 grid-cols-1 gap-6 md:ml-6 mt-7 mb-7  '>
              
        
             {   
@@ -44,9 +44,9 @@ const Home = () => {
           </div>
           </div>
           <div>
-            <h1 className='text-5xl text-center'>Choose by Category</h1>
+            <h1 className='md:text-5xl text-3xl text-center'>Choose by Category</h1>
           </div>
-          <div className='grid grid-cols-3 gap-5'>
+          <div className='md:grid  grid-cols-3 flex flex-col  md:ml-6 ml-10 gap-5'>
          {
           item.slice(0,newlength).map(i=> <Sub key={i._id}  i={i}></Sub>)
          }

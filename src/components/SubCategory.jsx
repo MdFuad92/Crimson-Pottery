@@ -1,8 +1,10 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { FaStar } from 'react-icons/fa';
+import { Link, NavLink, useLoaderData } from 'react-router-dom';
 
 const SubCategory = () => {
     const category = useLoaderData()
+   
 
     return (
         <div className="  max-w-screen shadow-xl p-10 rounded-md  dark:bg-gray-50 dark:text-gray-900">
@@ -16,6 +18,19 @@ const SubCategory = () => {
                 <h2 className="text-xl font-semibold tracking-wide">{c.subcategory_name}</h2>
             </div>
             <p className="dark:text-gray-800">{c.description}</p>
+         <div className=' card-actions justify-between  flex  items-center'>
+         <div className=' flex text-yellow-400  gap-1 items-center'>
+                <FaStar></FaStar>
+                <span>{c.rating}</span>
+            </div>
+            <div>
+                <span>Price: {c.price}$</span>
+            </div>
+    
+            <div>
+               <NavLink to={`/items/${c._id}`}> <button className='underline hover:text-amber-100  '>View Details</button></NavLink>
+            </div>
+            </div>
             </div>
         )
     }

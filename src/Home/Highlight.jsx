@@ -35,7 +35,7 @@ const Highlight = () => {
                         </div>
                         <div className="flex">
                             
-                            <div className="ml-4">
+                            <div className="md:ml-4">
                                 <h4 className="text-lg font-medium leading-6 dark:text-gray-900">Artisan Pottery Haven</h4>
                                 <p className="mt-2 dark:text-gray-600">Discover exquisite handcrafted pottery pieces, from rustic clay mugs to elegant porcelain vases, curated to elevate your home decor.</p>
                             </div>
@@ -69,7 +69,7 @@ const Highlight = () => {
                        </div>
                        <div className="flex">
                            
-                           <div className="ml-20 text-start">
+                           <div className="md:ml-20 text-start">
                                <h4 className="text-lg font-medium   leading-6 dark:text-gray-900">Pottery Paradise</h4>
                                <p className="mt-2 dark:text-gray-600">Explore our collection of artisan stoneware, majolica, and terra cotta creations, each piece a testament to craftsmanship and beauty.</p>
                            </div>
@@ -103,7 +103,7 @@ const Highlight = () => {
                         </div>
                         <div className="flex">
                             
-                            <div className="ml-20 text-start">
+                            <div className="md:ml-20 text-start">
                                 <h4 className="text-lg font-medium   leading-6 dark:text-gray-900">Clay Creations Gallery</h4>
                                 <p className="mt-2 dark:text-gray-600">Immerse yourself in the world of ceramics with our diverse range of clay-made wonders, including decorative pots, plates, and unique wall art.</p>
                             </div>
@@ -136,7 +136,7 @@ const Highlight = () => {
                        </div>
                        <div className="flex">
                            
-                           <div className="ml-20 text-start">
+                           <div className="md:ml-20 text-start">
                                <h4 className="text-lg font-medium   leading-6 dark:text-gray-900">Ceramics & Architectural</h4>
                                <p className="mt-2 dark:text-gray-600"> Handcrafted ceramic wall art piece, featuring intricate designs inspired by architectural motifs.</p>
                            </div>
