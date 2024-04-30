@@ -1,13 +1,14 @@
 import React from 'react';
+import { FaDiscord, FaGithub, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
     return (
         <footer className="p-6 bg-stone-300  dark:text-gray-800">
 	<div className="container grid grid-cols-2 mx-auto gap-x-3 gap-y-8 sm:grid-cols-3 md:grid-cols-4">
 		<div className="flex flex-col space-y-4">
-			<h2 className="font-medium">Getting started</h2>
-			<div className="flex flex-col space-y-2 text-sm dark:text-gray-600">
-				<a rel="noopener noreferrer" href="#">Installation</a>
+			<h2 className="font-medium">Getting Started </h2>
+			<div className="flex  flex-col space-y-2 text-sm dark:text-gray-600">
+			<a rel="noopener noreferrer" href="#">Installation</a>
 				<a rel="noopener noreferrer" href="#">Release Notes</a>
 				<a rel="noopener noreferrer" href="#">Upgrade Guide</a>
 				<a rel="noopener noreferrer" href="#">Using with Preprocessors</a>
@@ -43,15 +44,14 @@ const Footer = () => {
 		<div className="flex flex-col space-y-4">
 			<h2 className="font-medium">Community</h2>
 			<div className="flex flex-col space-y-2 text-sm dark:text-gray-600">
-				<a rel="noopener noreferrer" href="#">GitHub</a>
-				<a rel="noopener noreferrer" href="#">Discord</a>
-				<a rel="noopener noreferrer" href="#">Twitter</a>
-				<a rel="noopener noreferrer" href="#">YouTube</a>
+				<a className='flex items-center gap-1' rel="noopener noreferrer" href="#"><FaGithub></FaGithub>GitHub</a>
+				<a className='flex items-center gap-1' rel="noopener noreferrer" href="#"><FaTwitter></FaTwitter>Twitter</a>
+				<a className='flex items-center gap-1' rel="noopener noreferrer" href="#"><FaYoutube></FaYoutube>YouTube</a>
 			</div>
 		</div>
 	</div>
 	<div className="flex items-center justify-center px-6 pt-12 text-sm">
-		<span className="dark:text-gray-600">© Copyright 1986. All Rights Reserved.</span>
+		<span className="dark:text-gray-600">© Copyright 2024. All Rights Reserved.</span>
 	</div>
 </footer>
     );
