@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ExtraSection = () => {
+    useEffect(() => {
+        AOS.init();
+      }, [])
     return (
-        <div className='flex justify-center '>
+        <div className='flex justify-center ' data-aos="fade-right" data-aos-duration='1000'>
            <div className='md:w-[1300px] '>
            <div className='mb-10  flex items-center justify-center'>
                 <h1 className='text-5xl font-thin uppercase' >Learn your way to become a master craftsman</h1>

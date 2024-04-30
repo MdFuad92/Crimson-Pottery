@@ -18,7 +18,8 @@ import Update from '../components/Update';
 import Error from '../Error/Error';
 import PrivateRoute from './PrivateRoute';
 import { AuthContext } from '../AuthProvider/AuthProvider';
-import CategoriesSection from '../components/CategoriesSection';
+import SubCategory from '../components/SubCategory';
+
 
 
 
@@ -73,9 +74,9 @@ const router = createBrowserRouter([
           loader:({params}) => fetch(`http://localhost:5000/crafts/id/${params.id}`)
         },
         {
-          path:'/categoriesonly/:subcategory_name',
-          element:<CategoriesSection></CategoriesSection>,
-          loader:({params})=>fetch(`http://localhost:5000/newcrafts/${params.subcategory_name}`)
+        path:'/newcrafts/:subcategory_name',
+        element:<SubCategory></SubCategory>,
+        loader:({params}) => fetch(`http://localhost:5000/newcrafts/${params.subcategory_name}`)
 
         }
       

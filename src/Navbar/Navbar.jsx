@@ -45,7 +45,7 @@ const Navbar = () => {
     return (
      
 
-<div className="navbar  bg-gradient-to-r from-stone-500 via-stone-400 to-stone-300 dracula:bg-slate-900 " >
+<div className="navbar fixed z-40  bg-gradient-to-r from-stone-500 via-stone-400 to-stone-300 dracula:bg-slate-900 " >
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

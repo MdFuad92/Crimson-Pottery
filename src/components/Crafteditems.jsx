@@ -11,8 +11,8 @@ const Crafteditems = ({crafts}) => {
     const {_id,email,name,Customize,stock,processing,item_name ,photo, category ,price ,rating,description} = crafts
     return (
       
-         <div className="w-72 p-6 hover:cursor-pointer rounded-md shadow-md bg-stone-400  dark:text-gray-900" data-aos="fade-up"data-aos-duration='1000'>
-             <Link to={`/categoriesonly/${category}`}>
+         <div className="w-72 p-6 rounded-md shadow-md bg-stone-400  dark:text-gray-900" data-aos="fade-up"data-aos-duration='1000'>
+      
       <div>
       <img src={photo} alt="" className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500" />
       </div>
@@ -25,7 +25,7 @@ const Crafteditems = ({crafts}) => {
              <Link to={`/craftDetails/${_id}`} >           <button className='btn text-white mt-3 border-neutral-700 bg-neutral-700'>View Details</button></Link>
             <button className=' text-slate-500 mt-3 bg-gray-300 rounded-lg p-2'>{stock}</button>
         </div>
-        </Link>
+        
     </div>
       
     );
