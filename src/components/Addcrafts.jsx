@@ -54,12 +54,12 @@ const Addcrafts = () => {
     return (
       <div>
          
-          <div className=' hero min-h-screen    bg-no-repeat opacity-90  md:bg-[length:1600px_900px] bg-[length:600px_600px]' style={{backgroundImage: 'url(https://i.ibb.co/d2nzKcx/chloe-bolton-R0qth-Xq3jec-unsplash.jpg'}}>
+          <div className=' hero min-h-screen     bg-no-repeat opacity-90  md:bg-[length:1600px_900px] ' style={{backgroundImage: 'url(https://i.ibb.co/d2nzKcx/chloe-bolton-R0qth-Xq3jec-unsplash.jpg'}}>
         
       
         
-        <form onSubmit={handleAddcrafts} className="card-body " data-aos="fade-up"data-aos-duration='1000'>
-        <h1 className='text-4xl font-extrabold text-center '>Add Your Favorite Item</h1>
+        <form onSubmit={handleAddcrafts} className="card-body  " data-aos="fade-up"data-aos-duration='1000'>
+        <h1 className='md:text-4xl text-2xl font-extrabold text-center '>Add Your Favorite Item</h1>
            {/* form name and quantity*/} 
         <div className='md:flex items-center gap-8'>
         <div className="form-control w-1/2  ">
@@ -68,7 +68,7 @@ const Addcrafts = () => {
             </label>
             <input  type="text" placeholder="item URL" name='photo' className="input input-bordered w-full" required />
             </div>
-            <div className="form-control">
+            <div className="form-control md:w-auto w-52">
             <label className="label">
             <span className="label-text">Item Name</span>
             </label>
@@ -78,7 +78,7 @@ const Addcrafts = () => {
            
         </div>
          {/* form supply and taste*/} 
-        <div className='flex gap-8 items-center '>
+        <div className='md:flex gap-8 items-center '>
         <div className="form-control w-1/2 ">
             <label className="label">
             <span className="label-text">Category</span>
@@ -99,7 +99,7 @@ const Addcrafts = () => {
                         
                     </select>
             </div>
-            <div className="form-control">
+            <div className="form-control w-52  ">
             <label className="label">
             <span className="label-text">Price</span>
             </label>
@@ -109,14 +109,14 @@ const Addcrafts = () => {
            
         </div>
             {/* form category and details*/} 
-        <div className='flex items-center gap-8 '>
-        <div className="form-control w-1/2 ">
+        <div className='md:flex items-center gap-8 '>
+        <div className="form-control md:w-1/2 ">
             <label className="label">
             <span className="label-text">Rating</span>
             </label>
             <input  type="text" placeholder="Rating" name='rating'  className="input input-bordered w-full" required />
             </div>
-            <div className="form-control ">
+            <div className="form-control md:w-auto w-52 ">
             <h1 className='font-bold'>Customization</h1>
            <label className="cursor-pointer label space-x-3">
         
@@ -134,16 +134,16 @@ const Addcrafts = () => {
            
         </div>
      
-        <div className='flex items-center gap-8 '>
+        <div className='md:flex items-center gap-8 '>
        
-        <div className="form-control w-1/2 ">
+        <div className="form-control md:w-1/2 ">
         <label className="label">
             <span className="label-text">Processing Time</span>
             </label>
         <input  type="text" name='processing' placeholder="Processing Time" className="input input-bordered"  required />
           
             </div>
-            <div className="form-control">
+            <div className="form-control w-52">
             <h1 className='font-bold'>Stock Status</h1>
             <label className="cursor-pointer label space-x-3 ">
             <span className="label-text">Available</span>
@@ -163,7 +163,7 @@ const Addcrafts = () => {
            
         </div>
 
-        <div className='flex items-center gap-8 '>
+        <div className='md:flex items-center gap-8 '>
         <div className="form-control w-1/2 ">
             <label className="label">
             <span className="label-text font-bold">Email</span>
@@ -180,7 +180,7 @@ const Addcrafts = () => {
             </div>
            
         </div>
-        <div className='flex items-center gap-8 '>
+        <div className='md:flex items-center gap-8 '>
         <div className="form-control w-full ">
             <label className="label">
             <span className="label-text font-bold">Description</span>

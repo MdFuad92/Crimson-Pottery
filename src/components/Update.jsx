@@ -57,7 +57,7 @@ const Update = () => {
     return (
         <div>
          
-        <div className=' hero min-h-screen    bg-no-repeat opacity-90  md:bg-[length:1600px_900px] bg-[length:600px_600px]' style={{backgroundImage: 'url(https://i.ibb.co/d2nzKcx/chloe-bolton-R0qth-Xq3jec-unsplash.jpg'}}>
+        <div className=' hero min-h-screen    bg-no-repeat opacity-90  md:bg-[length:1600px_900px] ' style={{backgroundImage: 'url(https://i.ibb.co/d2nzKcx/chloe-bolton-R0qth-Xq3jec-unsplash.jpg'}}>
       
     
       
@@ -81,13 +81,13 @@ const Update = () => {
          
       </div>
        {/* form supply and taste*/} 
-      <div className='flex gap-8 items-center '>
+      <div className='md:flex gap-8 items-center '>
       <div className="form-control w-1/2 ">
           <label className="label">
           <span className="label-text">Category</span>
           </label>
         
-          <select className='input' defaultValue={category} placeholder='Category'  type="text" name="subcategory_Name" id="pottery-type">
+          <select className='input md:text-sm text-xs' defaultValue={category} placeholder='Category'  type="text" name="subcategory_Name" id="pottery-type">
                       <option value="Clay-made pottery">Clay-made pottery </option>
                       <option value="Stoneware"><span>Stoneware</span></option>
                       <option value="Porcelain"><span>Porcelain</span></option>
@@ -112,14 +112,14 @@ const Update = () => {
          
       </div>
           {/* form category and details*/} 
-      <div className='flex items-center gap-8 '>
-      <div className="form-control w-1/2 ">
+      <div className='md:flex items-center gap-8 '>
+      <div className="form-control md:w-1/2 ">
           <label className="label">
           <span className="label-text">Rating</span>
           </label>
           <input  type="text" placeholder="Rating" name='rating' defaultValue={rating}  className="input input-bordered w-full" required />
           </div>
-          <div className="form-control ">
+          <div className="form-control  ">
           <h1 className='font-bold'>Customization</h1>
          <label className="cursor-pointer label space-x-3" >
       
@@ -137,9 +137,9 @@ const Update = () => {
          
       </div>
    
-      <div className='flex items-center gap-8 '>
+      <div className='md:flex items-center gap-8 '>
      
-      <div className="form-control w-1/2 ">
+      <div className="form-control md:w-1/2 ">
       <label className="label">
           <span className="label-text">Processing Time</span>
           </label>
@@ -167,7 +167,7 @@ const Update = () => {
       </div>
 
      
-      <div className='flex items-center gap-8 '>
+      <div className='md:flex items-center gap-8 '>
       <div className="form-control w-full ">
           <label className="label">
           <span className="label-text font-bold">Description</span>

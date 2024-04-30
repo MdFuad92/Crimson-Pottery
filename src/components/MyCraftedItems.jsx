@@ -84,10 +84,10 @@ const MyCraftedItems = () => {
 
 
     return (
-        <div>
+        <div className=''>
                  <div className="text-center">
             <details className="dropdown  ">
-              <summary className="mt-5 btn btn-neutral text-white">Customizable</summary>
+              <summary className="mt-5 btn btn-neutral  text-white">Customizable</summary>
               <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
              
             <li onClick={()=>handleFilter('all')}  ><a>All</a></li>
@@ -99,7 +99,7 @@ const MyCraftedItems = () => {
               </details>
             </div>
 
-             <div className='grid grid-cols-4 ml-60  gap-6 mt-7 mb-7 ' data-aos="fade-up" data-aos-duration='1000'>
+             <div className='md:grid grid-cols-4 flex flex-col md:ml-60 p-3  gap-6 mt-7 mb-7 ' data-aos="fade-up" data-aos-duration='1000'>
             {
        displayCustom.map((m)=>
         <div key={m._id} className=" border-slate-600 flex flex-col max-w-lg p-6 space-y-6 overflow-hidden rounded-lg shadow-md dark:bg-gray-50 dark:text-gray-800">
