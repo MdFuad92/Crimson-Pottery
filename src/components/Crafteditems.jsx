@@ -11,7 +11,7 @@ const Crafteditems = ({crafts}) => {
     const {_id,email,name,Customize,stock,processing,item_name ,photo, category ,price ,rating,description} = crafts
     return (
       
-         <div className="w-72 p-6 rounded-md shadow-md bg-stone-400  dark:text-gray-900" data-aos="fade-up"data-aos-duration='1000'>
+         <div className=" p-6 rounded-md shadow-md bg-stone-400  dark:text-gray-900" data-aos="fade-up"data-aos-duration='1000'>
       
       <div>
       <img src={photo} alt="" className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500" />

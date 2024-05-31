@@ -16,10 +16,10 @@ const Sub = ({i}) => {
        
             
      
-           <div className=" card md:w-96 w-[300px] h-[400px] hover:text-white    bg-gradient-to-r from-stone-500 via-stone-400 to-stone-300 border " data-aos="fade-up" data-aos-duration='1000'>
+           <div className=" card  hover:text-white    bg-gradient-to-r from-stone-500 via-stone-400 to-stone-300 border " data-aos="fade-up" data-aos-duration='1000'>
        
         
-       <div className=" p-5  hover:rounded-xl cursor-pointer ">
+       <div className=" p-10  hover:rounded-xl cursor-pointer ">
        <Link to={`/newcrafts/${subcategory_name}`}>   
        <img className='w-60 h-60 rounded-xl'   src={image} alt="" />
           <h2 className="card-title">Category: {subcategory_name} </h2>

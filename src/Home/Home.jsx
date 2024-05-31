@@ -46,7 +46,7 @@ const Home = () => {
           <div>
             <h1 className='md:text-5xl text-3xl text-center'>Choose by Category</h1>
           </div>
-          <div className='md:grid  grid-cols-3 flex flex-col  md:ml-6 ml-10 gap-5'>
+          <div className='grid  md:grid-cols-3 grid-cols-1 gap-5'>
          {
           item.slice(0,newlength).map(i=> <Sub key={i._id}  i={i}></Sub>)
          }
