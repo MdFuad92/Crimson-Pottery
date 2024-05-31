@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import potter from '../../src/assets/10175562.jpg'
+import potter from '../../src/assets/chloe-bolton-R0qthXq3jec-unsplash.jpg'
+import pottery from '../../src/assets/pottery-art-in-line-style-logo-design-vector.jpg'
 
 import { AuthContext } from '../AuthProvider/AuthProvider';
 import { CiUser } from 'react-icons/ci';
@@ -55,7 +56,7 @@ const Navbar = () => {
             {link}
             </ul>
           </div>
-          <a className=" flex  items-center md:text-3xl text-xs font-poppins font-extrabold"><img className='md:w-14 w-7 rounded-md' src={potter} alt="" /> <span className='font-semibold ml-3'>Crimson Pottery </span> </a>
+          <a className=" flex  items-center md:text-3xl text-xs font-poppins font-extrabold"><img className='md:w-14 w-7 rounded-md' src={pottery} alt="" /> <span className='font-semibold ml-3'>Crimson Pottery </span> </a>
         </div>
         <div className="navbar-center hidden lg:flex   ">
           <ul className="menu menu-horizontal px-1 space-x-2  text-white font-poppins font-medium text-base">

@@ -38,7 +38,7 @@ const router = createBrowserRouter([
         {
            path:'/',
            element:<Home></Home>,
-           loader:()=>fetch('http://localhost:5000/crafts')
+           loader:()=>fetch('https://assignment-ten-server-steel.vercel.app/crafts')
         },
         {
          path:'/register',
@@ -56,13 +56,15 @@ const router = createBrowserRouter([
         {
           path:'/products',
           element:<Allcrafteditems></Allcrafteditems>,
-          loader:()=>fetch('http://localhost:5000/crafts'),
+          loader:()=>fetch('https://assignment-ten-server-steel.vercel.app/crafts')
+
+
          
         },
         {
           path:'/craftDetails/:id',
           element:<PrivateRoute><Craftdetails></Craftdetails>,</PrivateRoute>,
-          loader:({params}) => fetch(`http://localhost:5000/crafts/id/${params.id}`)
+          loader:({params}) => fetch(`https://assignment-ten-server-steel.vercel.app/crafts/id/${params.id}`)
 
         },
         {
@@ -73,18 +75,18 @@ const router = createBrowserRouter([
         {
           path:'/update/:id',
           element:<PrivateRoute><Update></Update></PrivateRoute>,
-          loader:({params}) => fetch(`http://localhost:5000/crafts/id/${params.id}`)
+          loader:({params}) => fetch(`https://assignment-ten-server-steel.vercel.app/crafts/id/${params.id}`)
         },
         {
         path:'/newcrafts/:subcategory_name',
         element:<SubCategory></SubCategory>,
-        loader:({params}) => fetch(`http://localhost:5000/newcrafts/new/${params.subcategory_name}`)
+        loader:({params}) => fetch(`https://assignment-ten-server-steel.vercel.app/newcrafts/new/${params.subcategory_name}`)
 
         },
         {
           path:'/items/:id',
           element:<Section></Section>,
-          loader:({params}) => fetch(`http://localhost:5000/newcrafts/${params.id}`)
+          loader:({params}) => fetch(`https://assignment-ten-server-steel.vercel.app/newcrafts/${params.id}`)
         
         }
 

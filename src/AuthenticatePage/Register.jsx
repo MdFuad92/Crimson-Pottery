@@ -27,15 +27,30 @@ const Register = () => {
           console.log(name,email,password,photo)
 
           if(password.length < 6){
-            toast.error('Password must be at least 6 characters')
+            Swal.fire({
+              title: "Oops!",
+              text: "Password must be at least 6 characters!",
+              icon: "error"
+            });
+            
              return
            }
            else if(!/[A-Z]/.test(password)){
-              toast.error('Password must have atleast one Uppercasecharacter')
+            Swal.fire({
+              title: "Oops!",
+              text: "Password must have atleast one Uppercasecharacter!",
+              icon: "error"
+            });
+             
               return
            }
            else if(!/[a-z]/.test(password)){
-             toast.error('Password must have atleast one Lowercasecharacter')
+            Swal.fire({
+              title: "Oops!",
+              text: "Password must have atleast one Lowercasecharacter!",
+              icon: "error"
+            });
+            
              return
            }
 
@@ -59,7 +74,7 @@ const Register = () => {
               icon: "success"
             });
 
-              fetch('http://localhost:5000/users',{
+              fetch('https://assignment-ten-server-steel.vercel.app/users',{
                 method:'POST',
                 headers:{
                  'content-type':'application/json'
@@ -88,7 +103,7 @@ const Register = () => {
         <div className="hero-content flex-col lg:flex-row-reverse" data-aos="fade-up" data-aos-duration='1000'>
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold">Register Now!</h1>
-            <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+            
           </div>
           <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-transparent font-medium">
             <form onSubmit={handleRegister} className="card-body">

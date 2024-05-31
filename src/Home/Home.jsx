@@ -13,7 +13,7 @@ const Home = () => {
     const [item,setItem] = useState([])
 
     useEffect(()=>{
-      fetch('http://localhost:5000/newcrafts')
+      fetch('https://assignment-ten-server-steel.vercel.app/newcrafts')
       .then(res=>res.json())
       .then(data=>
         setItem(data)

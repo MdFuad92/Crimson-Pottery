@@ -33,7 +33,7 @@ const Update = () => {
              const newCraft = {email,name,Customize,stock,processing,item_name ,photo, category ,price ,rating,description}
              console.log(newCraft)
              console.log(_id)
-             fetch(`http://localhost:5000/crafts/id/${_id}`,{
+             fetch(`https://assignment-ten-server-steel.vercel.app/crafts/id/${_id}`,{
                 method:'PUT',
                 headers:{
                     'content-type':'application/json'

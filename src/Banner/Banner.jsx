@@ -5,6 +5,7 @@ import React, { useEffect } from 'react';
 import { useTypewriter,Cursor } from 'react-simple-typewriter';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
     useEffect(() => {
@@ -38,8 +39,8 @@ const Banner = () => {
         
          </p>
           <div className='mt-5 space-x-3'>
-        <button className="btn btn-outline bg-neutral-700 border-neutral-700 text-white">Shop Now</button>
-        <button className="btn btn-outline hover:bg-neutral-700">All Items</button>
+        <Link to={'/products'}><button className="btn btn-outline bg-neutral-700 border-neutral-700 text-white">Shop Now</button></Link>
+      
         </div>
         
         </div>

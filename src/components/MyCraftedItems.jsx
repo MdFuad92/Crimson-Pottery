@@ -37,7 +37,7 @@ const MyCraftedItems = () => {
         }
     }
     useEffect(()=>{
-        fetch(`http://localhost:5000/crafts/${user?.email}`)
+        fetch(`https://assignment-ten-server-steel.vercel.app/crafts/${user?.email}`)
         .then((res)=> res.json())
         .then((data)=>{
             console.log(data)
@@ -58,7 +58,7 @@ const MyCraftedItems = () => {
             confirmButtonText: "Yes, delete it!"
           }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/crafts/id/${_id}`,{
+                fetch(`https://assignment-ten-server-steel.vercel.app/crafts/id/${_id}`,{
                     method:'DELETE',
                  })
                  .then(res=>res.json())

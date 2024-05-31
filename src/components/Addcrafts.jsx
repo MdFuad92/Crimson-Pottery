@@ -30,7 +30,7 @@ const Addcrafts = () => {
          const newCraft = {email,name,Customize,stock,processing,item_name ,photo, category ,price ,rating,description}
          console.log(newCraft)
 
-         fetch('http://localhost:5000/crafts',{
+         fetch('https://assignment-ten-server-steel.vercel.app/crafts',{
             method:'POST',
             headers:{
                 'content-type':'application/json'

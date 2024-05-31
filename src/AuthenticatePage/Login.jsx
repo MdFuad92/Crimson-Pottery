@@ -63,12 +63,7 @@ const Login = () => {
         })
         .catch((error)=>{
           console.error(error)
-          Swal.fire({
-            title: "Sorry!",
-            text: "Wrong Password or Email!",
-            icon: "error"
-          });
-        
+      
           
           
           
@@ -89,11 +84,7 @@ const Login = () => {
       })
       .catch((error)=>{
         console.error(error)
-        Swal.fire({
-          title: "Sorry!",
-          text: "Wrong Password or Email!",
-          icon: "error"
-        });
+       
       
    
       })
@@ -103,7 +94,7 @@ const Login = () => {
         <div className="hero-content flex-col lg:flex-row-reverse" data-aos="fade-up" data-aos-duration='1000'>
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold">Login Now!</h1>
-            <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+            <p className="py-6"></p>
           </div>
           <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-transparent font-medium">
             <form onSubmit={handleLogin} className="card-body">
