@@ -1,8 +1,11 @@
-# React + Vite
+# Crimson Pottery 
+Live link: https://assignment-ten-cf5d6.web.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Resources:
+- MongoDB for database : https://www.mongodb.com/
+- Tailwind-css: https://tailwindcss.com/docs/installation/framework-guides
+- Daisy-ui: https://daisyui.com/
+- Mamba-ui: https://mambaui.com/
+- Firebase: https://firebase.google.com/?gad_source=1&gclid=CjwKCAjw5v2wBhBrEiwAXDDoJWEX07f6laMpbyAa4PTr5cN4cGq765mVoFbOsHYCjb_sDl4MKhhOMxoCjiQQAvD_BwE&gclsrc=aw.ds
+- React-icon: https://www.npmjs.com/package/react-icons
+- Sweet-Alert: https://sweetalert2.github.io/#examples
