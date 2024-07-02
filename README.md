@@ -1,9 +1,18 @@
 # Crimson Pottery 
+
+Project-Overview: An arts and crafts website where clients can add their own custom design to order custom made Vase, Porcelain items & Pots etc.
+
 Live link: https://assignment-ten-cf5d6.web.app/
 
+**Features**: 
+- Clients can add their own custom design pottery items through  a form
+- Clients can update their form if they want.
+- login/register authentication implemented in the website
+- Has Dark Mode implementation
+  
 Server-Side-link: https://github.com/MdFuad92/Crimson-Pottery-Server-Side
 
-- Resources:
+**Resources**:
 - MongoDB for database : https://www.mongodb.com/
 - Tailwind-css: https://tailwindcss.com/docs/installation/framework-guides
 - Daisy-ui: https://daisyui.com/
