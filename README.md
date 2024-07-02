@@ -20,3 +20,10 @@ Server-Side-link: https://github.com/MdFuad92/Crimson-Pottery-Server-Side
 - Firebase: https://firebase.google.com/?gad_source=1&gclid=CjwKCAjw5v2wBhBrEiwAXDDoJWEX07f6laMpbyAa4PTr5cN4cGq765mVoFbOsHYCjb_sDl4MKhhOMxoCjiQQAvD_BwE&gclsrc=aw.ds
 - React-icon: https://www.npmjs.com/package/react-icons
 - Sweet-Alert: https://sweetalert2.github.io/#examples
+
+- - ### Installation
+
+1. **Clone the repository:**
+
+   ```sh
+   git clone https://github.com/yourusername/Data-Link.git
