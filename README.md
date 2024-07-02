@@ -21,7 +21,7 @@ Server-Side-link: https://github.com/MdFuad92/Crimson-Pottery-Server-Side
 - React-icon: https://www.npmjs.com/package/react-icons
 - Sweet-Alert: https://sweetalert2.github.io/#examples
 
-- - ### Installation
+- ### Installation
 
 1. **Clone the repository:**
 
