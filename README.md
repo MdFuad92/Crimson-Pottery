@@ -26,4 +26,4 @@ Server-Side-link: https://github.com/MdFuad92/Crimson-Pottery-Server-Side
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/yourusername/Data-Link.git
+   git clone https://github.com/yourusername/Crimson-Pottery.git
